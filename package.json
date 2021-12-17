@@ -1,10 +1,19 @@
 {
+  "name": "social-anxiety",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "gh-pages": "^3.2.3",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
-    "react-scripts": "^5.0.0"
+    "react-scripts": "^5.0.0",
+    "vercel": "^23.1.2",
+    "web-vitals": "^2.1.2",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -12,5 +21,17 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "vercel-install": "./vercel-submodule-workaround.sh && yarn --ignore-scripts --production=false"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
